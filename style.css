@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #000428, #302b63);
+}
+
+
+::-webkit-scrollbar {
+	background: #000;
+	width: 0.5vw;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 10px #00000070;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom, #302b63, #000428);
+}
+
+.top-menu {
+	top: 0;
+	opacity: 0;
+	width: 100vw;
+	background-color: #000428;
+	display: flex;
+	z-index: 10;
+	position: fixed;
+	height: 9.5vh;
+	animation: easein3 0.5s forwards 3s ease-in;
+}
+
+
+@keyframes easein3 {
+	0% {
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+.logo {
+	margin-top: 3vh;
+	width: 6.71vw;
+	margin-left: 2vw;
+}
+
+.resume {
+	position: absolute;
+	right: 0;
+	margin-top: 3vh;
+	width: 6vw;
+	margin-right: 2vw;
+}
+
+h2 {
+	margin-top: 25vh;
+	background-color: #ffffff00;
+	font-family: acumin-pro, HelveticaNeue;
+	font-size: 6vh;
+	font-weight: lighter;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	animation: easein 1s forwards 0s ease-in;
+}
+
+@keyframes easein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+h2 b {
+	border-bottom: 1.5px solid currentColor;
+}
+
+h3 {
+	margin-left: 35vw;
+	width: 30vw;
+	margin-top: 5vh;
+	font-family: acumin-pro, HelveticaNeue;
+	font-size: 2.5vh;
+	font-weight: lighter;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: #c9c9c9;
+	opacity: 0;
+	animation: easein 1s forwards 1s linear;
+}
+
+h3 b {
+	color: #ffffff;
+}
+
+.hero-img {
+	opacity: 0;
+	margin-top: 5vh;
+	margin-left: 20vw;
+	width: 60vw;
+	animation: easein2 0.5s forwards 2s ease-in-out;
+}
+
+@keyframes easein2 {
+	0% {
+		transform: translateY(60%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+h4 {
+	opacity: 0;
+	margin-top: 10vh;
+	background-color: #ffffff00;
+	font-family: acumin-pro, HelveticaNeue;
+	font-size: 4vh;
+	font-weight: lighter;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	animation: easein2 0.5s forwards 2s ease-in-out;
+}
+
+h4 b {
+	border-bottom: 1.5px solid currentColor;
+}
+
+h5 {
+	opacity: 0;
+	margin-left: 29vw;
+	width: 42vw;
+	margin-top: 4vh;
+	font-family: acumin-pro, HelveticaNeue;
+	font-size: 2.5vh;
+	font-weight: lighter;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: #c9c9c9;
+	animation: easein2 0.5s forwards 2s ease-in-out;
+}
+
+.h5other {
+	margin-top: 2.5vh;
+}
+
+.hero-img2 {
+	opacity: 0;
+	margin-top: 5vh;
+	margin-left: 35vw;
+	width: 30vw;
+	animation: easein2 0.5s forwards 2s ease-in-out;
+}
+
+.tools {
+	opacity: 0;
+	margin-top: 5vh;
+	margin-left: 42.5vw;
+	width: 15vw;
+	animation: easein2 0.5s forwards 2s ease-in-out;
+}
+
+.github {
+	opacity: 0;
+	margin-top: 3vh;
+	margin-left: 42.5vw;
+	width: 15vw;
+	animation: easein2 0.5s forwards 2s ease-in-out;
+}
+
+h5 a {
+	text-decoration: none;
+}
+
+.back {
+	margin-top: 12vh;
+	margin-bottom: 10vh;
+}
+
+
+
+
+@media(max-width : 1080px) {
+	.top-menu {
+		height: 7.5vh;
+	}
+
+	.logo {
+		margin-top: 2.65vh;
+		width: 15.71vw;
+		margin-left: 4vw;
+	}
+
+	.resume {
+		position: absolute;
+		right: 0;
+		margin-top: 2.65vh;
+		width: 15vw;
+		margin-right: 4vw;
+	}
+
+	h2 {
+		margin-top: 20vh;
+		font-size: 3.8vh;
+	}
+
+	h3 {
+		margin-left: 15vw;
+		width: 70vw;
+		margin-top: 7.5vh;
+		font-size: 2vh;
+	}
+
+	.hero-img {
+		margin-top: 6vh;
+		margin-left: 5vw;
+		width: 90vw;
+	}
+
+	h4 {
+		margin-top: 10vh;
+		font-size: 2.5vh;
+	}
+
+	h5 {
+		margin-left: 15vw;
+		width: 70vw;
+		margin-top: 4vh;
+		font-size: 2vh;
+
+	}
+
+	.h5other {
+		margin-top: 2vh;
+	}
+
+	.hero-img2 {
+		margin-top: 5vh;
+		margin-left: 27.5vw;
+		width: 45vw;
+	}
+
+	.tools {
+		margin-top: 4vh;
+		margin-left: 35vw;
+		width: 30vw;
+	}
+
+	.github {
+		margin-top: 2vh;
+		margin-left: 35vw;
+		width: 30vw;
+	}
+
+	.back {
+		margin-top: 10vh;
+		margin-bottom: 8vh;
+	}
+
+}
