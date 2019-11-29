@@ -207,6 +207,10 @@ h5 a {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 .back {
 	margin-top: 12vh;
 	margin-bottom: 10vh;
